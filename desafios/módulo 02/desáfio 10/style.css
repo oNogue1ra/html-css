@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url('fonts/_.idroid.otf');
+}
+
+body {
+    /* width: 100%; */
+    margin: 0em;
+    text-indent: 20px;
+    background-color: #84E1AD;
+    overflow-x: hidden;
+}
+
+p {
+    font-weight: 300;
+}
+
+header {
+    font-family: 'android' ,'Niveau Grotesk',arial, Helvetica, sans-serif;
+    color: white;  
+    background-image: linear-gradient(to top, #1A5B37 5%, #3CD983);
+    width: 100vw;
+    margin: 0em 0em 0em 0em;
+    padding: 1px 0px 10px 0px;
+    border: 0;
+}
+
+header > h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.81);
+}
+
+header > p {
+    text-align: center;
+}
+
+nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+main {
+    background-color: white;
+    margin: 0em 10em;
+    padding: 1px 1em;
+}
+
+main > h1 {
+    color: #174f30;    
+}
+h1, h2 {
+    text-indent: 0px;
+}
+
+.t2 {
+    color: #1A5C38;
+    background: linear-gradient(to right, rgba(114, 225, 158, 0.384), white);   
+}
+
+a {
+    color: #298c56;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.link::after {
+    content: '🔗';
+}
+
+#bugdroid {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    /* width: 100vh; */
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    background-color: #174f30;
+    margin: -1px 10em 0px 10em;
+    padding: 2em 1px;
+}
+
+#video > iframe {
+    width: calc(100% - 2em);
+    height: calc(100% - 2em);
+    max-width: 800px;
+    max-height: 800px;
+    aspect-ratio: 16/9;
+}
+
+#extra {
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    margin: -2px 10em 3px 10em;
+    padding: 1px 0px 0px 0px;
+}
+
+#aprender {
+    color: white;
+    background-color: #298c56;
+    border-radius: 10px 10px 0px 0px;
+    padding: 1px;
+}
+
+#lista {
+    width: calc(100% - 2em);
+    height: calc(100% - 2em);
+    margin: 0px 1em 0px 1em;
+    padding: 0px 0px 0px 0px;
+    background-color: #aee2c4;
+    border-radius: 10px;
+}
+
+#lista > h2, p {
+    padding-left: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    columns: 2;
+}
+
+footer {
+    color: #84E1AD;
+    text-align: center;
+    background-color: #174f30;
+    margin: 0px -8px -8px -7px;
+    padding: 7px 0px 7px 0px;
+}
+
+ .branco {
+    color: white;
+}

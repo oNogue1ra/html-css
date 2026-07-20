@@ -1,0 +1,66 @@
+@charset "UTF-8" ;
+
+/* Todas as demais mídias */
+
+/* typical driven breakpoints
+----------------------------------
+mobile: Sem minimo - 480px
+large mobile / small tablet: 481px - 767px
+tablet: 768px - 1024px
+desktop / Laptop: 1025ox - 1200px
+large desktop / 4K: 1201px - sem max
+---------------------------------- */
+
+@media print {
+body {
+    background-image: url(../images/back-print.jpg); /*desnecessário*/
+}
+
+main {
+    width: 90vw;
+    border: 2px black solid;
+}
+
+main h1 {
+    color: black;
+    font-size: none;
+}
+
+main::after {
+    content: 'Essa impressão foi feita através do site www.curso emvideo.com';
+    text-decoration: overline;
+}
+
+img#phone {display: none;}
+img#print {display: block;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+body {
+    background: url(../images/back-tablet.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+img#phone {display: none;}
+img#tablet {display: block;}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+body {
+    background: url(../images/back-pc.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+img#phone {display: none;}
+img#pc {display: block;}
+}
+
+@media screen and (min-width: 1201px) {
+body {
+    background: url(../images/back-tv.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+img#phone {display: none;}
+img#tv {display: block;}
+}
